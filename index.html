@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <title>Chatbot</title>
+  <link rel="stylesheet" href="./index.css">
+
+  
+
+  
+  <title>Personal Portfolio</title>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.down-arrow').forEach(button => {
+        button.addEventListener('click', function() {
+          const targetSectionId = this.closest('section').nextElementSibling.id;
+          const targetSection = document.getElementById(targetSectionId);
+
+          if (targetSection) {
+            const offsetTop = targetSection.offsetTop;
+            window.scrollTo({
+              top: offsetTop,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+
+ 
+  </script>
+   <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('up-arrow').addEventListener('click', function() {
+        const targetSection = document.getElementById('hero-section');
+        const offsetTop = targetSection.offsetTop;
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+
+
+
+
+
+</head>
+<body>
+    <header>
+    <nav>
+        <h1 class="logo">CCR</h1>
+        
+    <button id="burger-menu" class="burger-menu">
+        <i class="fas fa-bars"></i>
+    </button>
+    
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#about" class="link">About</a></li>
+        <li><a href="#portfolio" class="link">Portfolio</a></li>
+        <li><a href="#blogs" class="link">Blogs</a></li>
+        <li><a href="#connect" class="link">Connect</a></li>
+      </ul>
+    
+      </nav>
+      <script>
+        const burgerMenu = document.getElementById('burger-menu');
+        const navLinks = document.getElementById('nav-links');
+    
+        burgerMenu.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+      </script>
+    </header>
+
+      
+
+  <section id="hero-section">
+    <h1 class="animated" >Hello!👋 I'm Shishir Karki</h1>
+    <p class="animated">Your friendly neighborhood developer on a mission to turn innovative ideas into digital reality. Welcome to my virtual playground, where lines of code come to life! 💻✨</p>
+    <button id="down-arrow" class="down-arrow invisible-button">
+        <i class="fas fa-chevron-down"></i>
+      </button>
+   
+  </section>
+
+
+  <section id="about">
+    <div class="about-content">
+        <h2 class="about-link">About</h2>
+        <p class="about-text1">I'VE BUILT EXPERIENCE IN</p>
+        <ul id="about-skills">
+          <li class="skill-item">
+            <a href="#"><img src="ui-design.png" alt="Web Design"></a>
+            <p>Web Design</p>
+            
+            
+          </li>
+          <li class="skill-item">
+            <a href="#"><img src="coding.png" alt="Front End Development"></a>
+            <p>Front End</p>
+          </li>
+          <li class="skill-item">
+            <a href="#"><img src="backend.png" alt="Back End Development"></a>
+            <p>Back End</p>
+          </li>
+        </ul>
+      </div>
+  
+    <div class="profile-container">
+      <div class="profile-picture">
+        <img src="IMG_1010.jpg" alt="Profile picture of Shishir Karki" />
+      </div>
+  
+      <p class="about-text">Hi, I'm Shishir!
+
+        I'm a 21-year-old web developer based in Minnesota, USA. I have 2 years of experience in web development, and I'm passionate about creating clean, user-friendly, and efficient websites and applications.
+        
+        I'm proficient in both front-end and back-end development, and I'm always looking for new challenges to learn and grow. 
+        
+        When I'm not coding, I enjoy Playing Soccer,listening to Rap musics and sometime I like to play video games.
+        
+        I'm always looking for new opportunities to collaborate on interesting projects. If you're looking for a skilled and motivated web developer, please don't hesitate to  connect</p>
+  
+    </div>
+    <a href="shishir karki resume.docx" class="button">Download Resume</a>
+    <button id="down-arrow" class="down-arrow invisible-button">
+        <i class="fas fa-chevron-down"></i>
+      </button>
+  </section>
+
+  
+  <section id="portfolio">
+    <div class="portfolio-container">
+      <h2 class="portfolio-link">Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="image1.jpg" alt="Image 1">
+          <h3>Project 1</h3>
+          <p>Description of project 1.</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="image2.jpg" alt="Image 2">
+          <h3>Project 2</h3>
+          <p>Description of project 2.</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="image3.jpg" alt="Image 3">
+          <h3>Project 3</h3>
+          <p>Description of project 3.</p>
+        </div>
+        <!-- Add more portfolio items here -->
+      </div>
+    </div>
+    <button id="down-arrow" class="down-arrow invisible-button">
+        <i class="fas fa-chevron-down"></i>
+      </button>
+  </section>
+
+  <section id="blogs">
+    <h2 class="blogs-link">Blogs</h2>
+    <div class="blog-grid">
+      <div class="blog-item">
+        <img src="gettyimages-829310060-612x612.jpg" alt="Blog 1">
+        <h3>Ep 1</h3>
+        <p>"Soccer Symphony: Unveiling the Maestros of the Transfer Window 2024"</p>
+        <a href="https://ccrthoughts.blogspot.com/2024/02/soccer-symphony-unveiling-maestros-of.html">Read More...</a>
+      </div>
+      <div class="blog-item">
+        <img src="Lionel-Messi-7.jpg" alt="Blog 2">
+        <h3>Ep 2</h3>
+        <p>"Lionel Messi: The Ultimate Triumph - Winning the FIFA World Cup 2022"</p>
+        <a href="https://ccrthoughts.blogspot.com/2024/02/lionel-messi-ultimate-triumph-winning.html">Read More...</a>
+      </div>
+      <div class="blog-item">
+        <img src="lionel-messi-barca-man-united.jpg" alt="Blog 3">
+        <h3>Ep 3</h3>
+        <p>"Lionel Messi's Illustrious Career at FC Barcelona: A Journey of Magic and Glory"</p>
+        <a href="https://ccrthoughts.blogspot.com/2024/02/lionel-messis-illustrious-career-at-fc.html">Read More...</a>
+      </div>
+    </div>
+    <button id="down-arrow" class="down-arrow invisible-button">
+      <i class="fas fa-chevron-down"></i>
+    </button>
+  </section>
+
+  <div id="blog-posts"></div>
+
+
+
+  <section id="connect">
+    <h2 class="connect-link">Connect</h2>
+    <ul>
+        <li><a href="https://twitter.com/shishir89655850" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://github.com/CCR-ui" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/shishir-karki/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="mailto:shishirkarki708@gmail.com"><i class="fas fa-envelope"></i></a></li>
+      </ul>
+      <button id="up-arrow" class="up-arrow invisible-button">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+  </section>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
+
