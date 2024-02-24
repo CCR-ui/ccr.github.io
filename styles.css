@@ -222,12 +222,19 @@ nav ul li a {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    
+    flex-wrap: wrap;
   }
   
   #about-skills .skill-item {
-    flex-basis: calc(33.333% - 20px);
+    flex-basis: calc(33.333% - 10px);
     margin-bottom: 20px;
+  }
+
+  @media (max-width: 480px) {
+    #about-skills .skill-item {
+      flex-basis: 100%;
+    }
   }
   
   #about-skills .skill-item:not(:nth-child(3n)) {
@@ -245,7 +252,7 @@ nav ul li a {
     }
   
     #about-skills .skill-item {
-      flex-basis: calc(50% - 20px);
+      flex-basis: calc(50% - 10px);
     }
   
     #about-skills .skill-item:nth-child(2n) {
@@ -253,14 +260,12 @@ nav ul li a {
     }
   }
   
-  @media (max-width: 480px) {
-    #about-skills .skill-item {
-      flex-basis: 100%;
-    }
-  }
+ 
 
   #about-skills .skill-item:first-child p {
-    display:inline-flex;
+    display: flexbox;
+    
+    
   }
 
   #about .about-content .about-text1 {
@@ -757,7 +762,5 @@ nav ul li a {
   .invisible-button:hover {
     color: #777272; /* Change this to the color you want your arrow to be when hovered */
   }
-
-  
 
   
