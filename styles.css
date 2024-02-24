@@ -647,6 +647,12 @@ nav ul li a {
     margin: 0;
     font-size: 1.2rem;
   }
+ .blog-item h3,
+  .blog-item p,
+  .blog-item a {
+    margin: 0;
+    text-align: center;
+  }
   
  
 
