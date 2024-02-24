@@ -46,30 +46,7 @@ nav ul li a {
     text-decoration: none;
   }
 
-  .wave-animation {
-    animation: wave 2s ease-in-out infinite;
-  }
-  
-  @keyframes wave {
-    0% {
-      transform: rotate(-5deg);
-    }
-    50% {
-      transform: rotate(5deg);
-    }
-    100% {
-      transform: rotate(-5deg);
-    }
-  }
-  
-  .logo {
-    /* Other styles here */
-    animation: wave 2s ease-in-out infinite;
-  }
-  .logo:hover{
-    color: #fff;
-    cursor: pointer;
-  }
+
   .link {
     /* Other styles here */
     animation: wave 2s ease-in-out infinite;
@@ -780,5 +757,7 @@ nav ul li a {
   .invisible-button:hover {
     color: #777272; /* Change this to the color you want your arrow to be when hovered */
   }
+
+  
 
   
