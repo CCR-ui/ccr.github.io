@@ -625,8 +625,8 @@ nav ul li a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 0.9rem;
     margin-bottom: 2rem;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
     transition: transform 0.5s ease-in-out;
   }
   
@@ -638,23 +638,21 @@ nav ul li a {
   }
   
   .blog-item h3 {
+    width: 100%;
+    height: auto;
     font-size: 2rem;
     margin-top: 0;
     margin-bottom: 0.5rem;
   }
   
   .blog-item p {
+    width: 100%;
+    height: auto;
     margin: 0;
     font-size: 1.2rem;
   }
- .blog-item h3,
-  .blog-item p,
-  .blog-item a {
-    margin: 0;
-    text-align: center;
-  }
   
- 
+  
 
 
   @media (max-width: 768px) {
@@ -662,7 +660,7 @@ nav ul li a {
     
     .blog-item {
       margin-bottom: 2rem;
-      height: 100%;
+      height: auto;
     }
     
     .blog-grid {
